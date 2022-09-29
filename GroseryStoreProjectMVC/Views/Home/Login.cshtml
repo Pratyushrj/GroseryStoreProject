@@ -1,0 +1,42 @@
+﻿@model GroseryStoreProjectMVC.Models.TblRegitrtation
+@{
+    ViewBag.Title = "Login";
+}
+
+
+
+<center>
+    @using (Html.BeginForm("Login", "Home"))
+    {
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <table borger="1" backColor="Yellow">
+            <tr>
+                <td colspan="2" align="center"><h2>Sign In</h2></td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.email)</td>
+                <td>@Html.TextBoxFor(m => m.email)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.pass)</td>
+                <td>@Html.TextBoxFor(m => m.pass)</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="Submit" value="Login" />
+
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    }
+</center>
+
